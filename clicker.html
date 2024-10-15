@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>arabie clicker</title>
+    <style>
+        img {
+            border-style: dashed;
+            border-color: palevioletred;
+        }
+
+        body {
+            background-color: blanchedalmond
+        }
+    </style>
+</head>
+
+<body>
+    <img id="arabie"
+        src="https://i.ytimg.com/vi/DPaE9a1vfkU/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&amp;rs=AOn4CLBiywFpxaQ9Eav52iDeTOKfBcYxaQ">
+   <p>number of brootals:</p> <p id="scoretext">0</p>
+</body>
+
+</html>
+<script>
+    
+    function up() {
+        var score = 0
+        document.getElementById("arabie").addEventListener("click", up)
+        score = score + 1
+        console.log(score)
+        document.getElementById("scoretext").innerHTML = score
+}
+</script>
