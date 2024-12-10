@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>audrey's box</title>
+  <style>
+    #box {
+      width: 300px;
+      height: 300px;
+      background-color: red;
+      position: absolute;
+      top: 621px;
+      left: 0px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="box"></div>
+
+  <script>
+    var leftPosition = 0
+    var topPosition = 0
+    var rightDirection = 5
+    var upDirection = 15
+
+    document.getElementById("box").addEventListener("click", speedUp);
+
+    setInterval(moveBox, 16)
+
+    function moveBox() {
+      // when its reaschedsf 13236 zwtchjk revr4se
+      leftPosition = leftPosition + rightDirection
+      topPosition = topPosition + upDirection
+
+      if (leftPosition > 1336) {
+        rightDirection = -5
+      }
+      if (leftPosition < 0) {
+        rightDirection = 5
+      }
+      if (topPosition < 0) {
+        upDirection = 15
+      }
+      if (topPosition > 621) {
+        upDirection = -15
+      }
+
+      document.getElementById("box").style.left = leftPosition + "px";
+      document.getElementById("box").style.top = topPosition + "px";
+
+    }
+
+    function speedUp() {
+      rightDirection = rightDirection * 2
+      upDirection = upDirection * 2
+    }
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>emery suarez</title>
+  <style>
+    #cat{
+      width: 300px;
+    }
+  </style>
+</head>
+<body>
+<img id="cat" src="https://assets.rebelmouse.io/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbWFnZSI6Imh0dHBzOi8vYXNzZXRzLnJibC5tcy8zNTUwMDA3My9vcmlnaW4uanBnIiwiZXhwaXJlc19hdCI6MTc0MjQzODk3Mn0.fptWsZZXUcKhksbJeVmar-pYMF3wEqfT9s49pfQjTys/img.jpg?width=800&quality=85">
+<p id="color">antibiotic resistance</p>
+<p id="number">1</p>
+<script>
+document.getElementById("cat").addEventListener("click", cat);
+document.getElementById("cat").addEventListener("mouseenter", fat);
+document.getElementById("cat").addEventListener("mouseout", skinny);
+
+function skinny(){
+  document.getElementById("cat").style.width = "300px";
+}
+function fat(){
+  document.getElementById("cat").style.width = "700px";
+}
+
+function cat(){
+  alert("cat!")
+}
+
+
+document.getElementById("color").addEventListener("click", color);
+function color(){
+}
+
+document.getElementById("number").addEventListener("click", up);
+function up(){
+  var paragraph = document.getElementById("number");
+  var currentNumber = parseInt(paragraph.innerText) + 1;
+  paragraph.innerText = currentNumber;
+}
+
+</script>
+</body>
+</html>
