@@ -1,5 +1,4 @@
 $(function () {
-  // initialize canvas and context when able to
   canvas = document.getElementById("canvas");
   ctx = canvas.getContext("2d");
   window.addEventListener("load", loadJson);
@@ -12,10 +11,10 @@ $(function () {
       $(document).on("keydown", handleKeyDown);
       $(document).on("keyup", handleKeyUp);
       firstTimeSetup = false;
-      //start game
+
       setInterval(main, 1000 / frameRate);
     }
-    // Create walls - do not delete or modify this code
+    
     createPlatform(-50, -50, canvas.width + 100, 50); //top
     createPlatform(-50, canvas.height - 10, canvas.width + 100, 200); //right
     createPlatform(-50, -50, 50, canvas.height + 500); //bottom

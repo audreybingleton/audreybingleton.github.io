@@ -6,20 +6,26 @@
     <meta name="viewport" content="width=device-width">
     <title>arabie clicker</title>
     <style>
-        img {
-            border-style: dashed;
-            border-color: palevioletred;
-        }
+            img { 
+                border-style: dashed; border-color: #f4c2c2; 
+            } 
 
-        body {
-            background-color: blanchedalmond
-        }
+            body { 
+                background-color: #fff5ee; font-family: 'Comic Sans MS', cursive, sans-serif; text-align: center; 
+            } 
 
-        .button {
-            border-width: 3px;
-            border-color: palevioletred;
-            background-color: pink;
-        }
+            .button { 
+                border-width: 3px; border-color: #f4c2c2; /* Light pink */ background-color: #ffc0cb; padding: 10px 20px; border-radius: 12px; font-size: 18px; cursor: pointer; 
+            }
+
+            #scoretext { 
+                font-size: 24px; color: #ff69b4; /* Hot pink */ margin: 20px 0; 
+            } 
+
+            #upgradeCost { font-size: 18px; color: #d2b48c; /* Tan */ } 
+
+            p { color: #ff1493;
+            }
     </style>
 </head>
 
@@ -30,7 +36,7 @@
 
     <button class="button" id="buyUpgrade">upgrade</button>
     <div id="upgradeCost"> > upgrade cost: 100</div>
-    <p>every 3 upgrades arabie will evolve into a new form (be careful  can be dangherous)</p>
+    <p>every 3 upgrades arabie will evolve into a new form (be careful  can be dangerous)I LOVE EMERY SO MUCH</p>
 </body>
 
 </html>
@@ -66,7 +72,7 @@ function buyUpgrade() {
             upgradeCost *= 3;
         }
 
-        if (upgradeCount % 3 === 0) {
+        if (upgradeCount % 3 === 0){
             var imageIndex = (upgradeCount / 3) % images.length;
             document.getElementById("arabie").src = images[imageIndex];
         }
@@ -75,7 +81,7 @@ function buyUpgrade() {
         document.getElementById("scoretext").innerHTML = score;
         document.getElementById("upgradeCost").innerHTML = ` > upgrade cost: ${upgradeCost}`;
     } else {
-        console.log("not enough points to buy the upgrade, loser");
+        console.log("not enough points to buy the upgrade brielle");
     }
 }
 
