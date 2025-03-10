@@ -60,14 +60,19 @@ var init = function (window) {
         function update() {
             // TODO 4 : Update the position of each circle using physikz.updatePosition()
             
-            physikz.updatePosition(/* bracket notation to access the first circle */);
-            physikz.updatePosition(/* bracket notation to access the second circle */);
-            physikz.updatePosition(/* bracket notation to access the third circle */);
-            physikz.updatePosition(/* bracket notation to access the fourth circle */);
-            physikz.updatePosition(/* bracket notation to access the fifth circle */);
+            physikz.updatePosition([0]);
+            physikz.updatePosition([1]);
+            physikz.updatePosition([2]);
+            physikz.updatePosition([3]);
+            physikz.updatePosition([4]);
             
             // TODO 5 : Call game.checkCirclePosition() on your circles
            
+            game.checkCirclePosition([0]);
+            game.checkCirclePosition([1]);
+            game.checkCirclePosition([2]);
+            game.checkCirclePosition([3]);
+            game.checkCirclePosition([4]);
 
             // TODO 8 / TODO 9 : Iterate over the array
            
